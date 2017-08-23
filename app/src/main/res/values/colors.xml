@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="darkOrchid3">#9A32CD</color>
+    <color name="cobalt">#3d59ab</color>
+    <color name="lightSkyBlue">#87CEFA</color>
+    <color name="coldGrey">#808a87</color>
+    <color name="mintCream">#f5fffa</color>
+    <color name="seaGreen">#54ff9f</color>
+    <color name="forestGreen">#228B22</color>
+    <color name="gold2">#EEC900</color>
+    <color name="cadmiumYellow">#ff9912</color>
+    <color name="burntSienna">#8a360f</color>
+    <color name="fireBrick2">#ee2c2c</color>
+    <color name="gray1">#030303</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="midnightBlue">#1e90ff</color>
+
+
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+</resources>

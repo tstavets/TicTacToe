@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectAnimator
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:propertyName="strokeWidth"
+    android:duration="@integer/animation_duration_long"
+    android:valueFrom="3"
+    android:valueTo="5.5"
+    android:valueType="floatType"
+    android:interpolator="@android:anim/cycle_interpolator"/>

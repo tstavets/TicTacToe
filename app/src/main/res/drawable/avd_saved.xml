@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <aapt:attr name="android:drawable">
+        <vector
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:width="30dp"
+            android:height="30dp"
+            android:viewportWidth="30"
+            android:viewportHeight="30">
+            <group android:name="hangedman">
+                <path
+                    android:name="body"
+                    android:pathData="M 10 10 L 10 20"
+                    android:fillColor="#ffffff"
+                    android:strokeColor="#9a32cd"
+                    android:strokeWidth="1"
+                    android:strokeLineCap="round"/>
+                <path
+                    android:name="left_arm"
+                    android:pathData="M 10 10 L 7 16"
+                    android:strokeColor="#9a32cd"
+                    android:strokeWidth="1"
+                    android:strokeLineCap="round"/>
+                <path
+                    android:name="right_arm"
+                    android:pathData="M 10 10 L 13 16"
+                    android:strokeColor="#9a32cd"
+                    android:strokeWidth="1"
+                    android:strokeLineCap="round"/>
+                <path
+                    android:name="left_leg"
+                    android:pathData="M 10 20 L 7 25"
+                    android:strokeColor="#9a32cd"
+                    android:strokeWidth="1"
+                    android:strokeLineCap="round"/>
+                <path
+                    android:name="right_leg"
+                    android:pathData="M 10 20 L 13 25"
+                    android:strokeColor="#9a32cd"
+                    android:strokeWidth="1"
+                    android:strokeLineCap="round"/>
+                <group
+                    android:name="group"
+                    android:pivotX="10"
+                    android:pivotY="12">
+                    <path
+                        android:name="head"
+                        android:pathData="M 6 6 C 6 3.8 7.8 2 10 2 C 12.2 2 14 3.8 14 6 C 14 8.2 12.2 10 10 10 C 7.8 10 6 8.2 6 6"
+                        android:strokeColor="#9a32cd"
+                        android:strokeWidth="1"
+                        android:strokeLineCap="round"/>
+                </group>
+            </group>
+            <group android:name="noose_group">
+                <path
+                    android:name="noose_base"
+                    android:pathData="M 13 29 L 27 29"
+                    android:strokeColor="#9a32cd"
+                    android:strokeWidth="1"
+                    android:strokeLineCap="square"/>
+                <path
+                    android:name="noose"
+                    android:pathData="M 10 2 L 10 1 L 20 1 L 20 29"
+                    android:strokeColor="#9a32cd"
+                    android:strokeWidth="1"
+                    android:strokeLineCap="round"/>
+            </group>
+        </vector>
+    </aapt:attr>
+
+    <target
+        android:name="noose">
+        <aapt:attr name="android:animation">
+                <objectAnimator
+                    android:propertyName="pathData"
+                    android:duration="100"
+                    android:valueFrom="M 10 1 L 10 1 L 20 1 L 20 29"
+                    android:valueTo="M 20 1 L 20 1 L 20 1 L 20 29"
+                    android:valueType="pathType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+        </aapt:attr>
+    </target>
+
+    <target
+        android:name="noose">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="pathData"
+                android:startOffset="111"
+                android:duration="100"
+                android:valueFrom="M 20 1 L 20 1 L 20 1 L 20 29"
+                android:valueTo="M 20 29 L 20 29 L 20 29 L 20 29"
+                android:valueType="pathType"
+                android:interpolator="@android:interpolator/fast_out_slow_in"/>
+        </aapt:attr>
+    </target>
+
+    <target
+        android:name="hangedman">
+        <aapt:attr name="android:animation">
+                <objectAnimator
+                    android:propertyName="translateX"
+                    android:startOffset="200"
+                    android:duration="200"
+                    android:valueFrom="0"
+                    android:valueTo="10"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+        </aapt:attr>
+    </target>
+
+    <target
+        android:name="hangedman">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="translateY"
+                android:startOffset="200"
+                android:duration="200"
+                android:valueFrom="0"
+                android:valueTo="3"
+                android:valueType="floatType"
+                android:interpolator="@android:anim/linear_interpolator"/>
+        </aapt:attr>
+    </target>
+
+    <target
+        android:name="hangedman">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="translateY"
+                android:startOffset="525"
+                android:duration="75"
+                android:valueFrom="3"
+                android:valueTo="0"
+                android:valueType="floatType"
+                android:interpolator="@android:anim/decelerate_interpolator"/>
+        </aapt:attr>
+    </target>
+
+    <target
+        android:name="hangedman">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="translateY"
+                android:startOffset="600"
+                android:duration="200"
+                android:valueFrom="0"
+                android:valueTo="3"
+                android:valueType="floatType"
+                android:interpolator="@android:anim/bounce_interpolator"/>
+        </aapt:attr>
+    </target>
+
+</animated-vector>

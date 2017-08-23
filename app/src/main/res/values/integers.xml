@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="animation_duration_hangman">500</integer>
+    <integer name="animation_duration_hangman_half">250</integer>
+    <integer name="animation_duration">600</integer>
+    <integer name="animation_duration_long">1200</integer>
+    <integer name="activity_transition">300</integer>
+
+</resources>

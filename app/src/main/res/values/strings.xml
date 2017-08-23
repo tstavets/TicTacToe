@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Tic Tac Toe+</string>
+    <string name="app_name_custom">Ultra Tic Tac Toe</string>
+    <string name="reset_Button">New Game</string>
+    <string name="Game_Won_Text">Victor!</string>
+    <string name="Game_Draw_Text">Draw.</string>
+    <string name="TicTacToe_Button">Tic Tac Toe</string>
+    <string name="SuperTicTacToe_Button">Super Tic Tac Toe</string>
+    <string name="MainMenuTitle">Main Menu</string>
+    <string name="TictactoeTitle">Tic Tac Toe</string>
+    <string name="SuperTictactoeTitle">Super Tic Tac Toe</string>
+    <string name="HangmanTitle">Hangman</string>
+    <string name="SuperTictactoeHangmanTitle">Super Tic Tac Toe Hangman</string>
+    <string name="EasterEgg_Random_Move">Random</string>
+    <string name="EasterEgg_Cyclic_Move">Cyclic</string>
+    <string name="EasterEgg_MinMax_Move">MinMax</string>
+    <string name="EasterEgg_Simple_Move">Simple</string>
+    <string name="EasterEgg_Defense_Move">Defense</string>
+    <string name="EasterEgg_AI_Move">AI Move</string>
+    <string name="word_hint">Type your word here</string>
+    <string name="delete_button">Delete</string>
+    <string name="send_button">Send</string>
+    <string name="directions">Type out your word</string>
+    <string name="reset_button">New Game</string>
+    <string name="gameChooser">Choose a game!</string>
+    <string name="game_won_text">Game Won</string>
+    <string name="game_won">Game Won</string>
+    <string name="stthm_starting_directions">Start by choosing your Words!</string>
+    <string name="getRecord">Get Record</string>
+
+    <string name="HANGMAN">Hangman</string>
+    <string name="TICTACTOE">Tic Tac Toe</string>
+    <string name="SUPERTICTACTOE">Super Tic Tac Toe</string>
+    <string name="SUPERTICTACTOEHANGMAN">Super Tic Tac Toe Hangman</string>
+    <string name="DIRECTIONS">Directions</string>
+    <string name="the_player_s_record_will_appear_here">The player\'s record will appear here</string>
+    <string name="type_player_name_here">Type Player Name Here</string>
+    <string name="type_player_string_app_name">Type player @string/app_name</string>
+    <string name="edit_player_two">Edit Player Two</string>
+    <string name="edit_player_one">Edit Player One</string>
+
+
+    <integer name="max_string_length">17</integer>
+</resources>

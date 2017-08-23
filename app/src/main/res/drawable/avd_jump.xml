@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/hangman_saved"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    >
+
+    <target
+        android:name="hangedman">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="translateY"
+                android:startOffset="0"
+                android:duration="75"
+                android:valueFrom="3"
+                android:valueTo="0"
+                android:valueType="floatType"
+                android:interpolator="@android:anim/decelerate_interpolator"/>
+        </aapt:attr>
+    </target>
+
+    <target
+        android:name="hangedman">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="translateY"
+                android:startOffset="75"
+                android:duration="200"
+                android:valueFrom="0"
+                android:valueTo="3"
+                android:valueType="floatType"
+                android:interpolator="@android:anim/bounce_interpolator"/>
+            </aapt:attr>
+    </target>
+</animated-vector>

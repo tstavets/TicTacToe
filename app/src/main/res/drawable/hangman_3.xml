@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="30dp"
+    android:height="30dp"
+    android:viewportWidth="30"
+    android:viewportHeight="30">
+    <group android:name="hangedman">
+        <path
+            android:name="head"
+            android:pathData="@string/head"
+            android:strokeColor="@color/burntSienna"
+            android:strokeLineCap="round"
+            android:strokeWidth="1"/>
+        <path
+            android:name="body"
+            android:pathData="@string/body"
+            android:strokeColor="@color/burntSienna"
+            android:strokeLineCap="round"
+            android:strokeWidth="1"/>
+        <path
+            android:name="left_arm"
+            android:pathData="@string/leftArm_hidden"
+            android:strokeColor="@color/burntSienna"
+            android:strokeLineCap="round"
+            android:strokeWidth="0"/>
+        <path
+            android:name="right_arm"
+            android:pathData="@string/rightArm_hidden"
+            android:strokeColor="@color/burntSienna"
+
+            android:strokeLineCap="round"
+            android:strokeWidth="0"/>
+        <path
+            android:name="left_leg"
+            android:pathData="@string/leftLeg"
+            android:strokeColor="@color/burntSienna"
+            android:strokeLineCap="round"
+            android:strokeWidth="1"/>
+        <path
+            android:name="right_leg"
+            android:pathData="@string/rightLeg_hidden"
+            android:strokeColor="@color/burntSienna"
+            android:strokeLineCap="round"
+            android:strokeWidth="0"/>
+    </group>
+    <group android:name="noose_group">
+        <path
+            android:name="noose_base"
+            android:pathData="@string/noose_base"
+            android:strokeColor="@color/coldGrey"
+            android:strokeLineCap="square"
+            android:strokeWidth="1"/>
+        <path
+            android:name="noose"
+            android:pathData="@string/noose"
+            android:strokeColor="@color/coldGrey"
+            android:strokeLineCap="square"
+            android:strokeWidth="1"/>
+    </group>
+</vector>

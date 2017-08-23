@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_super_tic_tac_toe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:backgroundTint="@android:color/background_dark"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_dark"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="30dp">
+
+        <TextView
+            android:id="@+id/Game_Over_Text_SuperTTT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="15dp"
+            android:text="@string/game_won_text"
+            android:textColor="@android:color/background_light"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/Game_Over_Image_SuperTTT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_dark"
+            android:src="@drawable/vector_tictactoe_empty_space_lines"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <GridLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_column="0"
+            android:layout_margin="5dp"
+            android:layout_row="0"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="2"
+                android:layout_row="0"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton11"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton12"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton13"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="2"
+                android:layout_row="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton21"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton22"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="1"
+                android:layout_row="2"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton23"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="2"
+                android:layout_row="2"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_column="1"
+            android:layout_margin="5dp"
+            android:layout_row="0"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton6"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="2"
+                android:layout_row="0"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton14"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton15"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton16"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="2"
+                android:layout_row="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton24"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton25"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="1"
+                android:layout_row="2"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton26"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="2"
+                android:layout_row="2"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+        </GridLayout>
+
+        <ImageView
+            android:id="@+id/SuperTicTacToeHangmanPlayerTwoHangman"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_column="2"
+            android:layout_margin="5dp"
+            android:layout_row="0"
+            app:srcCompat="@drawable/hangman_0"/>
+
+        <GridLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_column="0"
+            android:layout_margin="5dp"
+            android:layout_row="1">
+
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton31"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton32"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton33"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="2"
+                android:layout_row="0"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton41"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton42"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton43"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="2"
+                android:layout_row="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton51"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton52"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="1"
+                android:layout_row="2"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton53"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="2"
+                android:layout_row="2"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_column="1"
+            android:layout_margin="5dp"
+            android:layout_row="1">
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton34"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton35"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton36"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="2"
+                android:layout_row="0"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton44"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton45"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton46"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="2"
+                android:layout_row="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton54"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton55"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="1"
+                android:layout_row="2"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton56"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="2"
+                android:layout_row="2"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_column="2"
+            android:layout_margin="5dp"
+            android:layout_row="1">
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton37"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton38"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton39"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="2"
+                android:layout_row="0"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton47"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton48"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton49"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="2"
+                android:layout_row="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton57"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton58"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="1"
+                android:layout_row="2"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton59"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="2"
+                android:layout_row="2"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+        </GridLayout>
+
+        <ImageView
+            android:id="@+id/SuperTicTacToeHangmanPlayerOneHangman"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_column="0"
+            android:layout_margin="5dp"
+            android:layout_row="2"
+            app:srcCompat="@drawable/hangman_0"/>
+
+        <GridLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_column="1"
+            android:layout_margin="5dp"
+            android:layout_row="2">
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton64"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton65"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton66"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="2"
+                android:layout_row="0"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton74"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton75"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton76"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="2"
+                android:layout_row="1"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton84"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton85"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="1"
+                android:layout_row="2"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton86"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="2"
+                android:layout_row="2"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_column="2"
+            android:layout_margin="5dp"
+            android:layout_row="2">
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton67"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton68"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton69"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="2"
+                android:layout_row="0"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton77"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton78"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton79"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="2"
+                android:layout_row="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton87"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton88"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="1"
+                android:layout_row="2"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+
+            <ImageView
+                android:id="@+id/SuperTicTacToeHangmanButton89"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_column="2"
+                android:layout_row="2"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vector_tictactoe_empty_space_lines"/>
+        </GridLayout>
+
+
+    </GridLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/turnImage_SuperTTTHM"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/vector_tictactoe_x"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.493">
+        </ImageView>
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

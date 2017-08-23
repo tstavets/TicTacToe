@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_dark_default"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/player_one_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="40dp"
+        android:cursorVisible="false"
+        android:imeOptions="actionDone"
+        android:inputType="textPersonName"
+        android:maxLength="@integer/max_string_length"
+        android:maxLines="1"
+        android:text="Player One"
+        android:textAlignment="center"
+
+        android:textColor="@color/gray1"
+        android:textSize="30sp"/>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scrollview_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray1"
+        android:fillViewport="true"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/color_selector_0"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:adjustViewBounds="false"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/color_chooser_avd"
+                android:tint="@color/cadmiumYellow"/>
+
+            <ImageButton
+                android:id="@+id/color_selector_1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:adjustViewBounds="false"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/color_chooser_avd"
+                android:tint="@color/burntSienna"/>
+
+            <ImageButton
+                android:id="@+id/color_selector_2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:adjustViewBounds="false"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/color_chooser_avd"
+                android:tint="@color/darkOrchid3"
+               />
+
+            <ImageButton
+                android:id="@+id/color_selector_3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:adjustViewBounds="false"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/color_chooser_avd"
+                android:tint="@color/fireBrick2"
+              />
+
+            <ImageButton
+                android:id="@+id/color_selector_4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:adjustViewBounds="false"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/color_chooser_avd"
+                android:tint="@color/cobalt"
+                />
+
+            <ImageButton
+                android:id="@+id/color_selector_5"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:adjustViewBounds="false"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/color_chooser_avd"
+                android:tint="@color/forestGreen"/>
+
+            <ImageButton
+                android:id="@+id/color_selector_6"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:adjustViewBounds="false"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/color_chooser_avd"
+                android:tint="@color/gold2"/>
+
+            <ImageButton
+                android:id="@+id/color_selector_7"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:adjustViewBounds="false"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/color_chooser_avd"
+                android:tint="@color/coldGrey"/>
+
+            <ImageButton
+                android:id="@+id/color_selector_8"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:adjustViewBounds="false"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/color_chooser_avd"
+                android:tint="@color/lightSkyBlue"/>
+
+            <ImageButton
+                android:id="@+id/color_selector_9"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:adjustViewBounds="false"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/color_chooser_avd"
+                android:tint="@color/seaGreen"/>
+
+            <ImageButton
+                android:id="@+id/color_selector_10"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:adjustViewBounds="false"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/color_chooser_avd"
+                android:tint="@color/mintCream"/>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

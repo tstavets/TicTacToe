@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.noveltystudios.android.tictactoe">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ttt_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ttt_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name="com.noveltystudios.android.tictactoe.MainMenuActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.noveltystudios.android.tictactoe.SuperTicTacToeActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.noveltystudios.android.tictactoe.TicTacToeActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.noveltystudios.android.tictactoe.HangmanActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.noveltystudios.android.tictactoe.SuperTicTacToeHangmanActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.noveltystudios.android.tictactoe.RecordsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.noveltystudios.android.tictactoe.DirectionsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

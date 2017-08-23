@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="30dp"
+    android:height="30dp"
+    android:viewportWidth="30"
+    android:viewportHeight="30">
+    <group
+        android:name="@string/x_group_name"
+        android:pivotX="15"
+        android:pivotY="15">
+        <path
+            android:name="@string/x_path_name"
+            android:pathData="@string/x_path_for_circle"
+            android:strokeColor="@color/darkOrchid3"
+            android:strokeWidth="3"
+            android:strokeLineCap="square"/>
+    </group>
+</vector>

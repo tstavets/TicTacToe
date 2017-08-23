@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectAnimator
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:propertyName="pathData"
+    android:duration="@integer/animation_duration"
+    android:valueFrom="@string/x_path_for_circle"
+    android:valueTo="@string/o_path"
+    android:valueType="pathType"
+    android:interpolator="@android:anim/linear_interpolator"/>

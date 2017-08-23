@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="empty_space_path">M 24 24 L 6 24 M 6 24 L 6 6 M 6 6 L 24 6 M 24 6 L 24 24</string>
+    <string name="x_path">M 6 6 L 15 15 M 24 6 L 15 15 M 24 24 L 15 15 M 6 24 L 15 15</string>
+    <string name="x_path_for_circle">M 7 7 C 24 24 24 24 24 24 C 15 15 15 15 15 15 C 24 6 24 6 24 6 C 7 23 7 23 7 23</string>
+    <string name="empty_space_path_for_circle">M 6 6 C 10 6 15 6 24 6 C 24 6 24 10 24 24 C 24 24 10 24 6 24 C 6 24 6 10 6 6</string>
+    <string name="o_path">M 6 15 C 6 10.05 10.05 6 15 6 C 19.95 6 24 10.05 24 15 C 24 19.95 19.95 24 15 24 C 10.05 24 6 19.95 6 15</string>
+    <string name="triangle_path">M 15 6 L 24 24 M 24 24 L 6 24 M 6 24 L 15 6 M 15 6 L 24 24</string>
+    <string name="triangle_path_for_circle">M 15 6 C 24 24 24 24 24 24 C 6 24 6 24 6 24 C 15 6 15 6 15 6 C 6 24 6 24 6 24</string>
+
+
+
+    <string name="empty_space_group_name">group_empty_space</string>
+    <string name="empty_space_path_name">path_empty_space</string>
+    <string name="x_path_name">path_x</string>
+    <string name="x_group_name">group_x</string>
+    <string name="o_path_name">path_o</string>
+    <string name="o_group_name">group_o</string>
+
+
+</resources>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray1"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.noveltystudios.android.tictactoe.SettingsFragment">
+
+    <EditText
+        android:id="@+id/player_one_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="40dp"
+        android:cursorVisible="false"
+        android:imeOptions="actionDone"
+        android:inputType="textPersonName"
+        android:maxLength="@integer/max_string_length"
+        android:maxLines="1"
+        android:text="Player One"
+        android:textAlignment="center"
+
+        android:textColor="@color/mintCream"
+        android:textSize="30sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:paddingBottom="40dp">
+
+        <ImageView
+            android:id="@+id/hangman_image_settings_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/hangman_0"/>
+
+        <ImageView
+            android:id="@+id/tictactoe_image"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/avd_tictactoe_empty_rotator"/>
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scrollview_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fillViewport="false"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/color_selector_0"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="false"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:tint="@color/cadmiumYellow"
+                android:src="@drawable/color_chooser_avd"/>
+
+            <ImageButton
+                android:id="@+id/color_selector_1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="false"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:tint="@color/burntSienna"
+                android:src="@drawable/color_chooser_avd"/>
+
+            <ImageButton
+                android:id="@+id/color_selector_2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="false"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:tint="@color/darkOrchid3"
+                android:src="@drawable/color_chooser_avd"/>
+
+            <ImageButton
+                android:id="@+id/color_selector_3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="false"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:tint="@color/fireBrick2"
+                android:src="@drawable/color_chooser_avd"/>
+
+            <ImageButton
+                android:id="@+id/color_selector_4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="false"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:tint="@color/cobalt"
+                android:src="@drawable/color_chooser_avd"/>
+
+            <ImageButton
+                android:id="@+id/color_selector_5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="false"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:tint="@color/forestGreen"
+                android:src="@drawable/color_chooser_avd"/>
+
+            <ImageButton
+                android:id="@+id/color_selector_6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="false"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:tint="@color/gold2"
+                android:src="@drawable/color_chooser_avd"/>
+
+            <ImageButton
+                android:id="@+id/color_selector_7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="false"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:tint="@color/coldGrey"
+                android:src="@drawable/color_chooser_avd"/>
+
+            <ImageButton
+                android:id="@+id/color_selector_8"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="false"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:tint="@color/lightSkyBlue"
+                android:src="@drawable/color_chooser_avd"/>
+
+            <ImageButton
+                android:id="@+id/color_selector_9"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="false"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:tint="@color/seaGreen"
+                android:src="@drawable/color_chooser_avd"/>
+
+            <ImageButton
+                android:id="@+id/color_selector_10"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="false"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:tint="@color/mintCream"
+                android:src="@drawable/color_chooser_avd"/>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/getRecordButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/getRecord"/>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+

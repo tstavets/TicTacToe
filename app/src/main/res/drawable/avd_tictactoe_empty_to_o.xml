@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/vector_tictactoe_o">
+
+    <target
+        android:animation="@animator/tictactoe_space_to_o"
+        android:name="@string/o_path_name"/>
+
+    <target
+        android:animation="@animator/tictactoe_rotate"
+        android:name="@string/o_group_name"/>
+
+
+</animated-vector>

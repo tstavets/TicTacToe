@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray1"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/mainMenuHangmanImage"
+        android:layout_width="289dp"
+        android:layout_height="258dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/hangman_0"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0.509"/>
+
+    <TextView
+        android:id="@+id/theWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:text="test"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@color/burntSienna"
+        android:textColorHint="@android:color/background_light"
+        android:textColorLink="@color/coldGrey"
+        android:textSize="36sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintBottom_toBottomOf="@+id/mainMenuHangmanImage"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/delete_button"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/send_button"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Q_Button"
+                android:layout_width="33dp"
+                android:layout_height="wrap_content"
+                android:text="Q"
+                />
+
+            <Button
+                android:id="@+id/W_Button"
+                android:layout_width="33dp"
+                android:layout_height="wrap_content"
+                android:text="W"
+                />
+
+            <Button
+                android:id="@+id/E_Button"
+                android:layout_width="33dp"
+                android:layout_height="wrap_content"
+                android:text="E"
+                />
+
+            <Button
+                android:id="@+id/R_Button"
+                android:layout_width="33dp"
+                android:layout_height="wrap_content"
+                android:text="R"
+                />
+
+            <Button
+                android:id="@+id/T_Button"
+                android:layout_width="33dp"
+                android:layout_height="wrap_content"
+                android:text="T"
+                />
+
+            <Button
+                android:id="@+id/Y_Button"
+                android:layout_width="33dp"
+                android:layout_height="wrap_content"
+                android:text="Y"
+                />
+
+            <Button
+                android:id="@+id/U_Button"
+                android:layout_width="33dp"
+                android:layout_height="wrap_content"
+                android:text="U"
+                />
+
+            <Button
+                android:id="@+id/I_Button"
+                android:layout_width="33dp"
+                android:layout_height="wrap_content"
+                android:text="I"
+                />
+
+            <Button
+                android:id="@+id/O_Button"
+                android:layout_width="33dp"
+                android:layout_height="wrap_content"
+                android:text="O"
+                />
+
+            <Button
+                android:id="@+id/P_Button"
+                android:layout_width="33dp"
+                android:layout_height="wrap_content"
+                android:text="P"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/A_Button"
+                android:layout_width="33dp"
+                android:layout_height="wrap_content"
+                android:text="A"/>
+
+            <Button
+                android:id="@+id/S_Button"
+                android:layout_width="33dp"
+                android:layout_height="wrap_content"
+                android:text="S"
+                />
+
+            <Button
+                android:id="@+id/D_Button"
+                android:layout_width="33dp"
+                android:layout_height="wrap_content"
+                android:text="D"
+                />
+
+            <Button
+                android:id="@+id/F_Button"
+                android:layout_width="33dp"
+                android:layout_height="wrap_content"
+                android:text="F"
+                />
+
+            <Button
+                android:id="@+id/G_Button"
+                android:layout_width="33dp"
+                android:layout_height="wrap_content"
+                android:text="G"
+                />
+
+            <Button
+                android:id="@+id/H_Button"
+                android:layout_width="33dp"
+                android:layout_height="wrap_content"
+                android:text="H"
+                />
+
+            <Button
+                android:id="@+id/J_Button"
+                android:layout_width="33dp"
+                android:layout_height="wrap_content"
+                android:text="J"
+                />
+
+            <Button
+                android:id="@+id/K_Button"
+                android:layout_width="33dp"
+                android:layout_height="wrap_content"
+                android:text="K"
+                />
+
+            <Button
+                android:id="@+id/L_Button"
+                android:layout_width="33dp"
+                android:layout_height="wrap_content"
+                android:text="L"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Z_Button"
+                android:layout_width="33dp"
+                android:layout_height="wrap_content"
+                android:text="Z"
+                />
+
+            <Button
+                android:id="@+id/X_Button"
+                android:layout_width="33dp"
+                android:layout_height="wrap_content"
+                android:text="X"
+                />
+
+            <Button
+                android:id="@+id/C_Button"
+                android:layout_width="33dp"
+                android:layout_height="wrap_content"
+                android:text="C"
+                />
+
+            <Button
+                android:id="@+id/V_Button"
+                android:layout_width="33dp"
+                android:layout_height="wrap_content"
+                android:text="V"
+                />
+
+            <Button
+                android:id="@+id/B_Button"
+                android:layout_width="33dp"
+                android:layout_height="wrap_content"
+                android:text="B"
+                />
+
+            <Button
+                android:id="@+id/N_Button"
+                android:layout_width="33dp"
+                android:layout_height="wrap_content"
+                android:text="N"
+                />
+
+            <Button
+                android:id="@+id/M_Button"
+                android:layout_width="33dp"
+                android:layout_height="wrap_content"
+                android:text="M"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/wordProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TEST"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/sendButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainMenuHangmanImage"/>
+
+</android.support.constraint.ConstraintLayout>

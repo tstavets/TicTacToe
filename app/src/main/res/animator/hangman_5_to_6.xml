@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectAnimator
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:propertyName="pathData"
+    android:duration="@integer/animation_duration_hangman"
+    android:valueFrom="@string/rightArm_hidden"
+    android:valueTo="@string/rightArm"
+    android:valueType="pathType"
+    android:interpolator="@android:anim/bounce_interpolator"/>

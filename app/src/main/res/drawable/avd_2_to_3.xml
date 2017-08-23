@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/hangman_3">
+
+    <target
+        android:name="left_leg"
+        android:animation="@animator/hangman_2_to_3" />
+    <target
+        android:animation="@animator/stroke_width"
+        android:name="left_leg"/>
+
+</animated-vector>

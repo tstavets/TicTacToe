@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="head">M 6 6 C 6 3.8 7.8 2 10 2 C 12.2 2 14 3.8 14 6 C 14 8.2 12.2 10 10 10 C 7.8 10 6 8.2 6 6</string>
+    <string name="body">M 10 10 L 10 20</string>
+    <string name="leftArm">M 10 10 L 7 16</string>
+    <string name="rightArm">M 10 10 L 13 16</string>
+    <string name="leftLeg">M 10 20 L 7 25</string>
+    <string name="rightLeg">M 10 20 L 13 25</string>
+    <string name="noose">M 10 2 L 10 1 L 20 1 L 20 29</string>
+    <string name="noose_base">M 13 29 L 27 29</string>
+
+    <string name="head_hidden">M 10 2 C 10 2 10 2 10 2 C 10 2 10 2 10 2 C 10 2 10 2 10 2 C 10 2 10 2 10 2</string>
+    <string name="body_hidden">M 10 2 L 10 2</string>
+    <string name="leftArm_hidden">M 10 2 L 10 2</string>
+    <string name="rightArm_hidden">M 10 2 L 10 2</string>
+    <string name="leftLeg_hidden">M 10 2 L 10 2</string>
+    <string name="rightLeg_hidden">M 10 2 L 10 2</string>
+    <string name="noose_hidden">M 20 29 L 20 29 L 20 29 L 20 29</string>
+
+</resources>
